@@ -1,0 +1,8 @@
+{
+  "name": "onlineornot",
+  "description": "Skills for configuring and managing uptime checks, heartbeats, status pages, maintenance windows, and incidents with OnlineOrNot",
+  "version": "1.0.0",
+  "author": {
+    "name": "OnlineOrNot"
+  }
+}

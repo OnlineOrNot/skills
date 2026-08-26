@@ -1,0 +1,20 @@
+{
+  "name": "onlineornot",
+  "version": "1.0.0",
+  "description": "Skills for configuring and managing uptime checks, heartbeats, status pages, maintenance windows, and incidents with OnlineOrNot",
+  "author": {
+    "name": "OnlineOrNot",
+    "email": "support@onlineornot.com",
+    "url": "https://onlineornot.com"
+  },
+  "keywords": [
+    "onlineornot",
+    "uptime-monitoring",
+    "synthetic-monitoring",
+    "browser-checks",
+    "heartbeats",
+    "status-pages",
+    "incidents",
+    "mcp"
+  ]
+}

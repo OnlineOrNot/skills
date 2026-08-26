@@ -1,0 +1,15 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "onlineornot",
+  "owner": {
+    "name": "OnlineOrNot",
+    "url": "https://onlineornot.com"
+  },
+  "plugins": [
+    {
+      "name": "onlineornot",
+      "source": "./",
+      "description": "Skills for monitoring applications and managing incidents with OnlineOrNot"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "onlineornot",
+  "owner": {
+    "name": "OnlineOrNot"
+  },
+  "plugins": [
+    {
+      "name": "onlineornot",
+      "source": "./",
+      "description": "Skills for monitoring applications and managing incidents with OnlineOrNot"
+    }
+  ]
+}
