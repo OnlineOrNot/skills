@@ -1,7 +1,7 @@
 {
   "name": "onlineornot",
-  "version": "1.0.0",
-  "description": "Skills for configuring and managing uptime checks, heartbeats, status pages, maintenance windows, and incidents with OnlineOrNot",
+  "version": "1.1.0",
+  "description": "Discover production monitoring gaps, configure OnlineOrNot checks, verify deployments, and manage incidents through the OnlineOrNot MCP server",
   "author": {
     "name": "OnlineOrNot",
     "email": "support@onlineornot.com",
