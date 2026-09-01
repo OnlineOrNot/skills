@@ -7,7 +7,7 @@
     {
       "name": "onlineornot",
       "source": "./",
-      "description": "Skills for monitoring applications and managing incidents with OnlineOrNot"
+      "description": "Discover production monitoring gaps, configure OnlineOrNot checks, verify deployments, and manage incidents through the OnlineOrNot MCP server"
     }
   ]
 }

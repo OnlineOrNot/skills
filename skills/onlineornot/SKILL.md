@@ -5,7 +5,7 @@ license: Apache-2.0
 compatibility: Requires internet access. Authenticated account operations require the OnlineOrNot MCP server at https://mcp.onlineornot.com/mcp.
 metadata:
   author: OnlineOrNot
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # OnlineOrNot
@@ -25,27 +25,31 @@ workflow and safety policy, not a cached API contract.
 ## Workflow
 
 1. **Route.** Identify the task and read only its reference from the table below.
-2. **Connect.** Confirm that OnlineOrNot MCP tools are available. If not, read
+2. **Discover.** For repository-wide monitoring, deployment verification, or
+   coverage audits, read [repository discovery](references/repository-discovery.md).
+   Build an evidence-backed production candidate list before querying or changing
+   OnlineOrNot.
+3. **Connect.** Confirm that OnlineOrNot MCP tools are available. If not, read
    [setup and tools](references/setup-and-tools.md) and help the user connect.
-3. **Inspect.** List current resources before proposing a mutation. Follow
+4. **Inspect.** List current resources before proposing a mutation. Follow
    pagination and compare stable identifiers, targets, and names. Retrieve full
    details only when required and only through an operation that redacts stored
    secrets from model-visible responses.
-4. **Resolve.** Search the live specification for the exact operation and read
+5. **Resolve.** Search the live specification for the exact operation and read
    its current request schema. Never construct payloads from memory.
-5. **Preview.** State the target organisation, resources, and meaningful
+6. **Preview.** State the target organisation, resources, and meaningful
    settings. Ask one concise question only when a required value or material
    choice cannot be inferred safely.
-6. **Authorize.** A direct user instruction approves its narrowly scoped,
+7. **Authorize.** A direct user instruction approves its narrowly scoped,
    reversible create or update. For every deletion, first resolve and preview
    the affected identifiers and effects, then obtain a fresh confirmation.
    Also obtain explicit confirmation for bulk mutation, team or token
    administration, subscriber changes, and public incident communication whose
    exact text, target, or notification behavior the user did not supply.
-7. **Execute.** Invoke the MCP operation with only supported fields. Preserve
+8. **Execute.** Invoke the MCP operation with only supported fields. Preserve
    unspecified values during updates unless the current schema defines
    replacement semantics.
-8. **Verify.** Compare the mutation response or a redacted follow-up response
+9. **Verify.** Compare the mutation response or a redacted follow-up response
    with the requested state. Avoid detail endpoints that return stored secrets.
    Report identifiers, relevant settings, and anything not completed.
 
@@ -53,6 +57,7 @@ workflow and safety policy, not a cached API contract.
 
 | Task | Read |
 | --- | --- |
+| Infer monitoring from a repository, audit coverage, or verify a deployment | [repository-discovery.md](references/repository-discovery.md) |
 | Connect MCP or resolve authentication/tool issues | [setup-and-tools.md](references/setup-and-tools.md) |
 | Configure HTTP, DNS, or TCP checks | [checks.md](references/checks.md) |
 | Configure a Playwright browser check | [browser-checks.md](references/browser-checks.md) |
@@ -84,8 +89,11 @@ requests when authenticated MCP tools are available.
   an OnlineOrNot token into the conversation.
 - Treat production hostnames, notification recipients, public status pages,
   incident wording, and schedules as user-owned decisions.
-- Never infer a production URL from a repository name or local development
-  configuration.
+- Use only explicitly evidenced production targets. Exclude localhost, loopback,
+  private-only development hosts, preview deployments, branch URLs, and staging
+  unless the user explicitly asks to monitor them.
+- Ask before creating more than five monitors or mutating a broad selection.
+  Preview the count, selection rule, and meaningful settings first.
 - Never claim a root cause from check status alone. State the evidence and its
   limits.
 

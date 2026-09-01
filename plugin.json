@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "onlineornot",
+  "version": "1.1.0",
+  "description": "Discover production monitoring gaps, configure OnlineOrNot checks, verify deployments, and manage incidents through the OnlineOrNot MCP server.",
+  "author": {
+    "name": "OnlineOrNot",
+    "email": "support@onlineornot.com",
+    "url": "https://onlineornot.com"
+  },
+  "homepage": "https://onlineornot.com/docs/reference/mcp",
+  "repository": "https://github.com/OnlineOrNot/skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "onlineornot",
+    "uptime-monitoring",
+    "synthetic-monitoring",
+    "browser-checks",
+    "heartbeats",
+    "status-pages",
+    "incidents",
+    "mcp"
+  ]
+}

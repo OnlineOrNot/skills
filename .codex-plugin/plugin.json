@@ -1,0 +1,42 @@
+{
+  "name": "onlineornot",
+  "version": "1.1.0",
+  "description": "Discover production monitoring gaps, configure OnlineOrNot checks, verify deployments, and manage incidents.",
+  "author": {
+    "name": "OnlineOrNot",
+    "email": "support@onlineornot.com",
+    "url": "https://onlineornot.com"
+  },
+  "homepage": "https://onlineornot.com/docs/reference/mcp",
+  "repository": "https://github.com/OnlineOrNot/skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "monitoring",
+    "uptime",
+    "synthetic-monitoring",
+    "status-pages",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "OnlineOrNot",
+    "shortDescription": "Monitor apps and manage incidents",
+    "longDescription": "Infer useful production monitoring from repository context, configure OnlineOrNot checks with safe defaults, verify deployments, investigate outages, and manage status-page incidents.",
+    "developerName": "OnlineOrNot",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://onlineornot.com",
+    "privacyPolicyURL": "https://onlineornot.com/privacy",
+    "termsOfServiceURL": "https://onlineornot.com/terms",
+    "defaultPrompt": [
+      "Monitor my production app.",
+      "Verify this deployment is healthy.",
+      "Which production endpoints are not monitored?"
+    ],
+    "brandColor": "#6366F1"
+  }
+}
